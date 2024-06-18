@@ -21,6 +21,6 @@ Using Playwright mobile emulator to test eCommerce website alongside a standard 
 ### Installation
 
 ```bash
-npm install playwright
+npm init playwright@latest
 
 ```

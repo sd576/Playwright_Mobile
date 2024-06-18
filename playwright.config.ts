@@ -10,7 +10,7 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './mobile_tests',
+  testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -41,6 +41,11 @@ export default defineConfig({
     {
       name: 'Mobile Safari',
       use: { ...devices['iPhone 11'] },
+      testDir: 'tests/mobile_tests',
+    },
+    {
+      name: 'desktop',
+      testDir: 'tests/desktop_browser_tests',
     },
 
     // {
