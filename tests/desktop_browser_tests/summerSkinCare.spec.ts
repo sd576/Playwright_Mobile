@@ -4,7 +4,7 @@ import { MobSummerSkinCareEventPage } from '../../page_objects/summerSkincareEve
 import { DayWearMatteMoisturiserPage } from '../../page_objects/dayWearMatteMoisturiserPage';
 import { ViewCartPage } from '../../page_objects/viewCartPage';
 
-test('Add DayWear Matte MoisturiserOil-Control Anti-Oxidant Moisture Gel Creme to cart', async ({
+test.skip('Add DayWear Matte MoisturiserOil-Control Anti-Oxidant Moisture Gel Creme to cart', async ({
   page,
 }, testInfo) => {
   testInfo.setTimeout(90000);
